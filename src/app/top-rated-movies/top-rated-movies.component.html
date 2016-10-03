@@ -1,0 +1,3 @@
+<search-movie (movieSearched)="searchMovie($event)"></search-movie>
+<movies-list [movies]="movies"></movies-list>
+<pagination-cmp [totalPages]="totalPages" [currentPage]="currentPage" (pageChanged)="goToPage($event)"></pagination-cmp>

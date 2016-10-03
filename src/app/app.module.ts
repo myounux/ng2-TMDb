@@ -2,17 +2,32 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
+
+import { SharedModule } from './shared';
+import { PopularMoviesModule } from './popular-movies';
+import { TopRatedMoviesModule } from './top-rated-movies';
+import { UpcomingMoviesModule } from './upcoming-movies';
+import { NowPlayingMoviesModule } from './now-playing-movies';
 
 import { AppComponent } from './app.component';
 
+import { routes } from './app.routes';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+	RouterModule.forRoot(routes),
+	SharedModule,
+	PopularMoviesModule,
+	TopRatedMoviesModule,
+	UpcomingMoviesModule,
+	NowPlayingMoviesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

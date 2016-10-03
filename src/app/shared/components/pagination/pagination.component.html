@@ -1,0 +1,28 @@
+<div class="row">
+	<div class="text-center">
+		<nav>
+			<ul class="pagination pagination-lg panel panel-primary">
+				<li class="page-item">
+					<button class="btn btn-primary" [disabled]="currentPage <= 1" (click)="changePage(1)">&laquo;</button>
+				</li>
+				<li class="page-item">
+					<button class="btn btn-primary" [disabled]="currentPage <= 1" (click)="changePage(currentPage - 1)">&lsaquo; Précédent</button>
+				</li>
+				<li class="page-item">
+					<select class="btn btn-default" #selectedPage (change)="changePage(selectedPage.value)">
+						<option *ngFor="let p of getPages()" [value]="p" [selected]="p == currentPage">{{p}}</option>
+					</select>
+				</li>
+				<li class="page-item">
+					/ <button class="btn btn-default">{{ totalPages }}</button>
+				</li>
+				<li class="page-item">
+					<button class="btn btn-primary" [disabled]="currentPage >= totalPages" (click)="changePage(currentPage + 1)">Suivant &rsaquo;</button>
+				</li>
+				<li class="page-item">
+					<button class="btn btn-primary" [disabled]="currentPage >= totalPages" (click)="changePage(totalPages)">&raquo;</button>
+				</li>
+			</ul>
+		</nav>
+	<div>
+</div>
