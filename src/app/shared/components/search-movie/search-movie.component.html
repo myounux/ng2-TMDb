@@ -2,7 +2,7 @@
 	<div class="panel col-xs-offset-4 col-xs-4">
 		<form role="search" (ngSubmit)="search(searchForm.value.title)" #searchForm="ngForm">
 			<div class="input-group">
-				<input type="text" name="title"  class="form-control" placeholder="Chercher..." required ngModel>
+				<input type="text" name="title" class="form-control" placeholder="Chercher..." required ngModel>
 				<span class="input-group-btn">
 					<button class="btn btn-primary" type="submit" [disabled]="!searchForm.valid">
 						<span class=" glyphicon glyphicon-search"></span>

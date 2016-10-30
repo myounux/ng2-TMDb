@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Détails du film</h1>
+			<div class="panel panel-default">
+				<div class="row">
+					<div class="col-xs-6">
+						<img src="http://image.tmdb.org/t/p/w500{{ movie.posterPath }}" [alt]="movie.title" class="movie-poster"/>
+					</div>
+					<div class="col-xs-6">
+						<h3>{{ movie.title }}</h3>
+						<p>{{ movie.releaseDate }} <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></p>
+						<p><strong>{{ movie.voteAverage | rating }} {{ movie.voteAverage }} / 10 ({{ movie.voteCount }}
+							votes)</strong></p>
+						<p>{{ movie.overview }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

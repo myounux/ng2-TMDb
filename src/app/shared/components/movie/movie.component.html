@@ -7,9 +7,10 @@
 			<div class="col-xs-6">
 				<h3>{{ movie.title }}</h3>
 				<p>{{ movie.releaseDate }} <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></p>
-				<p><strong>{{ movie.voteAverage | rating }} {{ movie.voteAverage }} / 10 ({{ movie.voteCount }} votes)</strong></p>
+				<p><strong>{{ movie.voteAverage | rating }} {{ movie.voteAverage }} / 10 ({{ movie.voteCount }} votes)</strong>
+				</p>
 				<p>{{ movie.overview | slice:0:200 }}...</p>
-				<p><a href="#" class="btn btn-primary" role="button">Plus d'info</a></p>
+				<p><a [routerLink]="['/movies', movie.id]" class="btn btn-primary" role="button">Plus d'info</a></p>
 			</div>
 		</div>
 	</div>

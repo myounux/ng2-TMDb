@@ -1,16 +1,17 @@
-import { NgModule } from '@angular/core';
-import { SharedModule } from '../shared';
-import { TopRatedMoviesComponent } from './top-rated-movies.component';
+import {NgModule} from '@angular/core';
+import {SharedModule} from '../shared';
+import {TopRatedMoviesComponent} from './top-rated-movies.component';
 
 @NgModule({
 	imports: [
-      SharedModule
-    ],
-    declarations: [
-      TopRatedMoviesComponent
-    ],
-    exports: [
-      TopRatedMoviesComponent
-    ]
+		SharedModule
+	],
+	declarations: [
+		TopRatedMoviesComponent
+	],
+	exports: [
+		TopRatedMoviesComponent
+	]
 })
-export class TopRatedMoviesModule { }
+export class TopRatedMoviesModule {
+}

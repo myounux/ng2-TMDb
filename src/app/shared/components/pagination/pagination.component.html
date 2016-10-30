@@ -6,7 +6,9 @@
 					<button class="btn btn-primary" [disabled]="currentPage <= 1" (click)="changePage(1)">&laquo;</button>
 				</li>
 				<li class="page-item">
-					<button class="btn btn-primary" [disabled]="currentPage <= 1" (click)="changePage(currentPage - 1)">&lsaquo; Précédent</button>
+					<button class="btn btn-primary" [disabled]="currentPage <= 1" (click)="changePage(currentPage - 1)">&lsaquo;
+						Précédent
+					</button>
 				</li>
 				<li class="page-item">
 					<select class="btn btn-default" #selectedPage (change)="changePage(selectedPage.value)">
@@ -14,15 +16,18 @@
 					</select>
 				</li>
 				<li class="page-item">
-					/ <button class="btn btn-default">{{ totalPages }}</button>
+					/
+					<button class="btn btn-default">{{ totalPages }}</button>
 				</li>
 				<li class="page-item">
-					<button class="btn btn-primary" [disabled]="currentPage >= totalPages" (click)="changePage(currentPage + 1)">Suivant &rsaquo;</button>
+					<button class="btn btn-primary" [disabled]="currentPage >= totalPages" (click)="changePage(currentPage + 1)">
+						Suivant &rsaquo;</button>
 				</li>
 				<li class="page-item">
-					<button class="btn btn-primary" [disabled]="currentPage >= totalPages" (click)="changePage(totalPages)">&raquo;</button>
+					<button class="btn btn-primary" [disabled]="currentPage >= totalPages"
+					        (click)="changePage(totalPages)">&raquo;</button>
 				</li>
 			</ul>
 		</nav>
-	<div>
-</div>
+		<div>
+		</div>

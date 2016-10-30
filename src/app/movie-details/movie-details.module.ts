@@ -1,17 +1,17 @@
 import {NgModule} from '@angular/core';
 import {SharedModule} from '../shared';
-import {UpcomingMoviesComponent} from './upcoming-movies.component';
+import {MovieDetailsComponent} from './movie-details.component';
 
 @NgModule({
 	imports: [
 		SharedModule
 	],
 	declarations: [
-		UpcomingMoviesComponent
+		MovieDetailsComponent
 	],
 	exports: [
-		UpcomingMoviesComponent
+		MovieDetailsComponent
 	]
 })
-export class UpcomingMoviesModule {
+export class MovieDetailsModule {
 }

@@ -1,9 +1,9 @@
-import { Route } from '@angular/router';
-import { PopularMoviesComponent } from './popular-movies.component';
+import {Route} from '@angular/router';
+import {PopularMoviesComponent} from './popular-movies.component';
 
 export const popularMoviesRoutes: Route[] = [
-  {
-    path: 'popular',
-    component: PopularMoviesComponent
-  }
+	{
+		path: 'popular',
+		component: PopularMoviesComponent
+	}
 ];

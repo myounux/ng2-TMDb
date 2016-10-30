@@ -1,17 +1,17 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import {Pipe, PipeTransform} from '@angular/core';
 
 @Pipe({
-  name: 'rating'
+	name: 'rating'
 })
 export class RatingPipe implements PipeTransform {
 
-  transform(value: number, symbol: string = '★') {
-    let stars: string = '';
-    for (let i = 1; i < value; i++) {
-      stars += "★";
-    }
+	transform(value: number, symbol = '★') {
+		let stars = '';
+		for (let i = 1; i < value; i++) {
+			stars += '★';
+		}
 
-    return stars;
-  }
+		return stars;
+	}
 
 }

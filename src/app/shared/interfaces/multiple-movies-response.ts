@@ -1,8 +1,8 @@
-import { Movie } from '../classes';
+import {Movie} from '../classes';
 
 export interface MultipleMoviesResponse {
-  page: number;
-  results: Movie[];
-  totalResults: number
-  totalPages: number;
+	page: number;
+	results: Movie[];
+	totalResults: number;
+	totalPages: number;
 }

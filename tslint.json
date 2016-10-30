@@ -13,7 +13,7 @@
     "forin": true,
     "indent": [
       true,
-      "spaces"
+      "tabs"
     ],
     "label-position": true,
     "label-undefined": true,
@@ -93,8 +93,8 @@
       "check-type"
     ],
 
-    "directive-selector-prefix": [true, "app"],
-    "component-selector-prefix": [true, "app"],
+    //"directive-selector-prefix": [true, "app"],
+    //"component-selector-prefix": [true, "app"],
     "directive-selector-name": [true, "camelCase"],
     "component-selector-name": [true, "kebab-case"],
     "directive-selector-type": [true, "attribute"],
