@@ -1,4 +1,6 @@
-# MoviesApp
+# ng2-TMDb
+Application developped with Angular 2 which aims to present the different features provided by this new framwork.
+This application is a simple web client that consumes the services of the REST API provided by www.themoviedb.org
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
